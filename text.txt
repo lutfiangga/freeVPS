@@ -1,0 +1,33 @@
+for panel
+sudo apt update
+sudo apt install -y nodejs git
+cd /etc
+sudo su
+git clone https://github.com/skyportlabs/panel
+cd panel
+npm i
+npm run seed
+npm run createUser
+node .
+create port 3000 & 3001
+
+for node
+cd /etc
+sudo su
+git clone https://github.com/skyportlabs/skyportd
+cd skyportd
+npm i
+copy configure node
+mkdir -p /etc/skyportd/volumes
+node .
+
+for 24/7
+nano new_file
+
+while true # start an infinite loop
+do
+        echo "Running" # print "Running"
+        sleep 1 # wait for 1 second
+done # end the loop
+
+bash new_file
